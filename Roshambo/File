@@ -1,0 +1,53 @@
+Your app should have:
+
+A view controller to begin a match, containing:
+rock, paper, and scissors buttons
+A view controller to display the results of a match, containing:
+A label to display the results of a match
+An image view to display the results of a match (optional)
+A “Play again” button
+Can't find any good images to use for the app? We've provided some image assets in the step2.5-roshambo-imageAssets directory of your ios-nd-uikit repo folder. (If you haven’t already downloaded the UIKit course projects repo, you can do so now.)
+
+Not sure where to start? Follow these steps:
+Set up the storyboard and view controller files:
+
+Step 1. Create a new Xcode project using the Single View template.
+Step 2. Add a swift file to your project, a subclass of UIViewController, so that you have two view controller files. Give the view controllers descriptive names.
+Step 3. Drag a second view controller into storyboard. Set its class in the identity inspector.
+Step 4. Add buttons and labels.
+Step 5. Connect button and label outlets.
+
+Write the methods for the game:
+
+Step 6. Write methods to do the following:
+
+Randomly generate an opponent’s play i.e. rock, paper, or scissors.
+
+
+Compare the user’s play with the randomly generated play to determine a winner.
+
+
+Generate a message for the results of a match, for example: “Paper covers rock. You win!”
+Switch statements will be helpful in writing these methods.
+
+Present the results view controller:
+
+Step 7. Present the results view controller in three different ways.
+
+All code: Instantiate the results view controller using the storyboard, and set the text of its label property. Connect the action on the rock button.
+
+Perform Segue by Identifier: Create a named segue, and invoke the performSegueWithIdentifier method in the paper button action. In this case, the label text should be set in the prepareForSegue method.
+
+
+Automatically Triggered Segue: Create an automatically triggered segue in storyboard, connected directly to the scissors button. In this case, the label text should also be set in the prepareForSegue method.
+Set up the “Play again” button:
+
+Step 8. Write a “play again” method that dismisses the results view controller.
+Step 9. Connect the action on the play again button.
+
+
+If you get stuck, post your question to the discussion forum.
+
+When you're finished, share your solution. For an example solution, check out the step2.6-roshambo-exampleSolution directory in your ios-nd-uikit repo folder.
+
+For a slightly more fancy solution, have a look at step2.7-roshambo-separateModel. The second version is more complex than the solution we expect from most students and we hope that you’ll approach the project like a code detective. Take it piece by piece and ask yourself: "What does this method do? Why are the classes structured in this way?" After you’ve wrestled with it for a bit, post questions to the forum!
